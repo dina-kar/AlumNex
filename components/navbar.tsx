@@ -15,7 +15,7 @@ export default function Component() {
               <svg className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
               </svg>
-              <span className="ml-2 text-xl font-bold text-white">Logo</span>
+              <span className="ml-2 text-xl font-bold text-white">AlumNex</span>
             </Link>
           </div>
           <div className="hidden sm:ml-6 sm:flex sm:items-center">
@@ -28,9 +28,11 @@ export default function Component() {
             </div>
           </div>
           <div className="hidden sm:ml-6 sm:flex sm:items-center">
-            <button className="bg-white text-purple-600 px-4 py-2 rounded-md text-sm font-medium hover:bg-opacity-90 transition duration-150 ease-in-out">
+            <Link href="https://alum-nex.vercel.app/api/auth/callback/github">
+             <button className="bg-white text-purple-600 px-4 py-2 rounded-md text-sm font-medium hover:bg-opacity-90 transition duration-150 ease-in-out">
               Sign Up
-            </button>
+             </button>
+            </Link>
           </div>
           <div className="-mr-2 flex items-center sm:hidden">
             <button
@@ -52,9 +54,10 @@ export default function Component() {
         <div className="sm:hidden bg-purple-700">
           <div className="pt-2 pb-3 space-y-1">
             <Link href="/" className="text-white hover:bg-purple-600 block px-3 py-2 rounded-md text-base font-medium">Home</Link>
+            <Link href="/directory" className="text-white hover:bg-purple-600 block px-3 py-2 rounded-md text-base font-medium">Alumni Directory</Link>
+            <Link href="/stories" className="text-white hover:bg-purple-600 block px-3 py-2 rounded-md text-base font-medium">Success Storiest</Link>
+            <Link href="/jobs" className="text-white hover:bg-purple-600 block px-3 py-2 rounded-md text-base font-medium">Job Search</Link>
             <Link href="/about" className="text-white hover:bg-purple-600 block px-3 py-2 rounded-md text-base font-medium">About</Link>
-            <Link href="/services" className="text-white hover:bg-purple-600 block px-3 py-2 rounded-md text-base font-medium">Services</Link>
-            <Link href="/contact" className="text-white hover:bg-purple-600 block px-3 py-2 rounded-md text-base font-medium">Contact</Link>
           </div>
           <div className="pt-4 pb-3 border-t border-purple-800">
             <Link href="https://alum-nex.vercel.app/api/auth/callback/github">
